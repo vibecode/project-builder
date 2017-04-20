@@ -23,7 +23,7 @@ module.exports = () => {
               dest: '../src/style/_svg-sprite.scss',
             }
           },
-          example : false
+          example: false
         },
         svg: {
           xmlDeclaration: false,
@@ -33,10 +33,10 @@ module.exports = () => {
     };
 
     return $.gulp.src('./src/sprites/svg/*.svg')
-      .pipe($.gp.svgmin(svgminConfig))
-      .pipe($.gp.cheerio(cheerioConfig))
-      .pipe($.gp.replace('&gt;', '>'))
-      .pipe($.gp.svgSprite(svgSpriteConfig))
-      .pipe($.gulp.dest($.config.output));
+            .pipe($.gp.svgmin(svgminConfig))
+            .pipe($.gp.cheerio(cheerioConfig))
+            .pipe($.gp.replace('&gt;', '>'))
+            .pipe($.gp.svgSprite(svgSpriteConfig))
+            .pipe($.gulp.dest($.config.output));
   });
 };
