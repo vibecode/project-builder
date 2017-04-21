@@ -17,7 +17,7 @@ module.exports = () => {
       mode: {
         symbol: {
           dest: '.',
-          sprite: 'img/sprites/svg-sprite.svg',
+          sprite: 'assets/img/sprites/svg-sprite.svg',
           render: {
             scss: {
               dest: '../src/style/_svg-sprite.scss',
